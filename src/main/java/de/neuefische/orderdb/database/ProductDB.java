@@ -24,8 +24,9 @@ public class ProductDB {
         this.products = products;
     }
 
-    public void addProduct(Product product) {
+    public Product addProduct(Product product) {
         products.add(product);
+        return product;
     }
 
     public Optional<Product> getProductById(String id) {
@@ -45,6 +46,7 @@ public class ProductDB {
         }
         return Optional.empty();
     }
+
 
     /*public void removeProduct(String id) {
         for (Product product : products) {

@@ -22,8 +22,8 @@ public class ProductService {
         return productDB.getProducts();
     }
 
-    public void addProduct(Product product) {
-        productDB.addProduct(product);
+    public Product addProduct(Product product) {
+        return productDB.addProduct(product);
     }
 
     /*public void removeProduct(String id) {

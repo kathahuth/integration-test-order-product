@@ -35,9 +35,9 @@ public class ProductController {
 
     }
 
-    @PutMapping()
-    public void addProduct(@RequestBody Product product) {
-        productService.addProduct(product);
+    @PostMapping
+    public Product addProduct(@RequestBody Product product) {
+        return productService.addProduct(product);
     }
 
     @GetMapping("search")
